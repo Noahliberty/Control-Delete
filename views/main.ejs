@@ -1,0 +1,73 @@
+<html>
+    <head>
+		<!-- Make site responsive on mobile/tablet -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Control Delete</title>
+		<!-- Semantic Ui -->
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+		<link rel="stylesheet" type="text/css" href="/css/app.css">
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,300&display=swap" rel="stylesheet">
+		
+	</head>
+	<body>
+		<div class="ui center aligned container">
+			<h1 class="ui header">Control Delete</h1>
+			<div class="ui divider"></div>
+            <h3 class="ui header">An E-Sports Apparal Company</h3>
+            <div class="ui divider"></div>
+            <p class="green ui">We are an e-sports apparal company looking to enable gamers to play thier best game. Please fill out the following form to recieve exclusive offers and news.</p>
+						
+			<!-- Form to post through /formsubmit route Node.js -->
+			<form class="ui massive form" action="/formsubmit" method="post">
+				<div class="field">
+					<label>First Name</label>
+					<input  class="ui input focus round" type="text" name="firstName" required>
+				</div>
+                <div class="field">
+					<label>Last Name</label>
+					<input class="ui input focus" type="text" name="lastName" required>
+				</div>
+                <div class="field">
+					<label>Email Address</label>
+					<input class="ui input focus" type="email" name="email" required>
+				</div>
+              
+                <div class="field">
+                    <label>Favorite Gaming Platform</label>
+                    <select class="ui dropdown field" name="platform" type="select" required>
+                        <option value="">Select Favorite Gaming Platform</option>
+                        <option value="PC">PC</option>
+                        <option value="Xbox">Xbox</option>
+                        <option value="Playstation">Playstation</option>
+                        <option value="Switch">Switch</option>
+                        <option value="Mobile">Mobile</option>
+                        <option value="Cloud">Cloud</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                
+                <div class="field">
+                    <label>Sign Up Now!</label>
+                    <button class="ui button green">Submit Info!</button>
+           		</div>
+			</form>
+		</div>
+	
+
+		<!-- JQuery and semantic.js CDN files	 -->
+		<script
+		  src="https://code.jquery.com/jquery-3.4.1.min.js"
+		  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+		  crossorigin="anonymous">
+		</script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>	
+        <script src="/js/app.js"></script>
+		
+		<!-- Start of HubSpot Embed Code -->
+		<script type="text/javascript" id="hs-script-loader" async defer src="//js-eu1.hs-scripts.com/25304197.js"></script>
+		<!-- End of HubSpot Embed Code -->
+	</body>
+</html>

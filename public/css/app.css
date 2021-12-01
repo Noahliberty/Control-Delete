@@ -1,0 +1,28 @@
+
+p {
+	font-size: medium;
+}
+
+a {
+	font-size: 2em;
+	color: #30106b;
+}
+
+body {
+	background-color:rgb(226, 117, 117);	
+	font-family: 'Roboto Mono', monospace;
+}
+
+button.ui.button {
+	margin-top: 1em;
+}
+
+h1.ui.header {
+	font-size: 5em;
+	font-family: 'Roboto Mono', monospace;
+}
+
+h3.ui.header {
+	font-family: 'Roboto Mono', monospace;
+}
+
